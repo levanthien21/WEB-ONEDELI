@@ -1,3 +1,18 @@
+.hero-intro {
+  color: #d9e4ff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.hero-closing {
+  color: #eaf0ff;
+  font-size: 1rem;
+  margin-top: 6px;
+  text-align: left;
+  max-width: 920px;
+}
 /* ==========================================================================
    HERO COMPONENT
    ========================================================================== */
