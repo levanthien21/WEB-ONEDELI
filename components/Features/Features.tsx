@@ -43,11 +43,7 @@ const Features: React.FC = () => {
             </div>
           </div>
 
-          <div className="features-cta text-center">
-            <a href="#contact" className="btn btn-primary btn-large">
-              Tải app ngay
-            </a>
-          </div>
+          {/* Removed CTA button per request */}
         </div>
       </div>
     </section>
