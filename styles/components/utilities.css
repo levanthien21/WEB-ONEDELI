@@ -184,6 +184,18 @@
   padding: 24px;
 }
 
+/* Two-column layout inside modal */
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.modal-visual img {
+  width: 100%;
+  height: auto;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
@@ -245,6 +257,17 @@
 
 .modal-submit {
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .modal-panel {
+    max-width: 900px;
+  }
+  .modal-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+  }
 }
 
 /* Focus States */

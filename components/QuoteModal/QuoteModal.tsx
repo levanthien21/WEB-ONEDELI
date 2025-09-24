@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { MARKETING_IMAGES } from '@/constants';
 
 type QuoteModalProps = {
   isOpen: boolean;
@@ -56,13 +58,25 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
     <div className="modal-backdrop" role="dialog" aria-modal="true">
       <div className="modal-panel">
         <button className="modal-close" aria-label="Đóng" onClick={onClose}>×</button>
-        <div className="modal-header">
-          <h3>🛒 ĐĂNG KÝ DÙNG THỬ ONEDELI</h3>
-          <div className="modal-badge">Trải nghiệm ngay 7 ngày miễn phí</div>
-          <div className="modal-subtitle">Quản lý bán hàng đa kênh – Kho – Hóa đơn</div>
-        </div>
+        <div className="modal-grid">
+          <div className="modal-visual">
+            <Image
+              src={MARKETING_IMAGES.trialHero}
+              alt="Dùng thử OneDeli"
+              width={520}
+              height={420}
+              className="img-responsive img-border-radius"
+            />
+          </div>
 
-        <form className="modal-form" onSubmit={handleSubmit}>
+          <div>
+            <div className="modal-header">
+              <h3>🛒 ĐĂNG KÝ DÙNG THỬ ONEDELI</h3>
+              <div className="modal-badge">Trải nghiệm ngay 7 ngày miễn phí</div>
+              <div className="modal-subtitle">Quản lý bán hàng đa kênh – Kho – Hóa đơn</div>
+            </div>
+
+            <form className="modal-form" onSubmit={handleSubmit}>
           <input
             className="modal-input"
             name="name"
@@ -100,7 +114,9 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           <button className="btn btn-primary modal-submit" type="submit" disabled={submitting}>
             {submitting ? 'Đang gửi...' : 'Dùng thử ngay & nhận báo giá'}
           </button>
-        </form>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );

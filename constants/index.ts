@@ -72,6 +72,10 @@ export const IMAGES = {
   partnerAhamove: '/images/logos/Logo-Ahamove-Transparent.webp'
 };
 
+export const MARKETING_IMAGES = {
+  trialHero: '/images/marketing/trial-hero.jpg'
+};
+
 export const APP_LINKS = {
   appStore: IMAGES.appStore,
   googlePlay: IMAGES.googlePlay

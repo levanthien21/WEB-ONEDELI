@@ -8,7 +8,7 @@ const Features: React.FC = () => {
     <section id="features" className="features section">
       <div className="container">
         <div className="features-header text-center">
-          <h2>Tính Năng Nổi Bật Của Onedeli</h2>
+          <h2>Hệ sinh thái đối tác uy tín</h2>
         </div>
         
         <div className="features-content">
