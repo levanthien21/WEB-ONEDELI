@@ -48,8 +48,8 @@ export const IMAGES = {
   logo: '/images/logos/logo-onedeli-3.png',
   logoWhite: '/images/logos/logo-onedeli-white.png',
   
-  // Hero - Using placeholder
-  heroBackground: 'https://via.placeholder.com/1920x1080/4A90E2/FFFFFF?text=One+Deli+Hero',
+  // Hero - Local marketing background
+  heroBackground: '/images/marketing/528556755_122119240454931574_3635096197601020149_n.jpg',
   
   // Sections - Using placeholders
   aboutImage: 'https://via.placeholder.com/500x400/7ED321/FFFFFF?text=About+One+Deli',

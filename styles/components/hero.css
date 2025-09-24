@@ -32,7 +32,15 @@
 }
 
 /* Hero Background */
-.hero-bg { display: none; }
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.18; /* soft background for readability */
+}
 
 .hero-bg-image {
   width: 100%;
@@ -41,7 +49,12 @@
   object-position: center;
 }
 
-.hero-overlay { display: none; }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.75) 35%, rgba(255,255,255,0.35) 100%);
+  pointer-events: none;
+}
 
 /* Hero Content */
 .hero-content {
