@@ -1,5 +1,5 @@
 .hero-intro {
-  color: #d9e4ff;
+  color: #475569;
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: left;
@@ -7,7 +7,7 @@
 }
 
 .hero-closing {
-  color: #eaf0ff;
+  color: #334155;
   font-size: 1rem;
   margin-top: 6px;
   text-align: left;
@@ -25,17 +25,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #ffffff;
 }
 
 /* Hero Background */
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+.hero-bg { display: none; }
 
 .hero-bg-image {
   width: 100%;
@@ -44,18 +38,13 @@
   object-position: center;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(10,24,44,0.9) 0%, rgba(10,24,44,0.65) 40%, rgba(10,24,44,0.3) 100%);
-  pointer-events: none;
-}
+.hero-overlay { display: none; }
 
 /* Hero Content */
 .hero-content {
   position: relative;
   z-index: 2;
-  color: var(--text-light);
+  color: var(--text-dark);
   width: 100%;
   padding: 0 var(--spacing-sm);
 }
@@ -82,7 +71,7 @@
 }
 
 .hero-kicker {
-  color: #d9e4ff;
+  color: #475569;
   font-size: 1.05rem;
   margin-bottom: 10px;
   text-align: left;
@@ -93,7 +82,7 @@
   padding-left: 0;
   list-style: none;
   text-align: left;
-  color: #eaf0ff;
+  color: #334155;
 }
 
 .hero-benefits li {
@@ -107,7 +96,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #00e09f;
+  color: #10b981;
 }
 
 .hero-subtitle {
@@ -118,6 +107,7 @@
   opacity: 0.95;
   text-align: left;
   max-width: 900px;
+  color: #475569;
 }
 
 /* Hero CTA */
