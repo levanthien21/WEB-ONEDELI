@@ -25,7 +25,10 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #ffffff;
+  /* Subtle brand-aligned light background for readability */
+  background:
+    radial-gradient(800px 420px at 85% 40%, rgba(1, 149, 254, 0.08) 0%, rgba(1, 149, 254, 0) 60%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
 }
 
 /* Hero Background */
