@@ -1,0 +1,207 @@
+/* ==========================================================================
+   SECTION COMPONENTS
+   ========================================================================== */
+
+/* About Section */
+.about {
+  background-color: var(--accent-color);
+  padding: var(--spacing-xxl) 0;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-image {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-xxl) 0;
+}
+
+.features-header {
+  margin-bottom: 60px;
+}
+
+.features-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.features-content {
+  text-align: center;
+}
+
+.feature-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.feature-image {
+  width: 100%;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow);
+  transition: var(--transition-base);
+}
+
+.feature-image img:hover {
+  transform: scale(1.02);
+}
+
+.features-cta {
+  margin-top: 40px;
+}
+
+.features-cta .btn {
+  font-size: 1.2rem;
+  padding: 20px 40px;
+  box-shadow: 0 8px 30px rgba(35, 82, 196, 0.3);
+}
+
+.features-cta .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(35, 82, 196, 0.4);
+}
+
+/* Pricing Section */
+.pricing {
+  padding: var(--spacing-xxl) 0;
+}
+
+.pricing-header {
+  margin-bottom: 60px;
+}
+
+.pricing-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.pricing-content {
+  text-align: center;
+}
+
+.pricing-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pricing-image {
+  width: 100%;
+}
+
+.pricing-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow);
+  transition: var(--transition-base);
+}
+
+.pricing-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Programs Section */
+.programs {
+  padding: 60px 0;
+}
+
+.programs-content {
+  text-align: center;
+}
+
+.programs-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 100%;
+}
+
+.program-image {
+  width: 100%;
+}
+
+.program-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow);
+  transition: var(--transition-base);
+}
+
+.program-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about-image {
+    max-width: 100%;
+  }
+  
+  .features {
+    padding: 60px 0;
+  }
+  
+  .features-header {
+    margin-bottom: 40px;
+  }
+  
+  .features-header h2 {
+    font-size: 2rem;
+  }
+  
+  .pricing {
+    padding: 60px 0;
+  }
+  
+  .pricing-header {
+    margin-bottom: 40px;
+  }
+  
+  .pricing-header h2 {
+    font-size: 2rem;
+  }
+  
+  .pricing-images {
+    gap: 20px;
+  }
+  
+  .programs {
+    padding: 40px 0;
+  }
+  
+  .programs-images {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-header h2,
+  .pricing-header h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,141 @@
+/* ==========================================================================
+   BUTTON COMPONENTS
+   ========================================================================== */
+
+/* Base Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 99px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-base);
+  line-height: 1;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(35, 82, 196, 0.25);
+}
+
+/* Button Variants */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: 0 4px 15px rgba(35, 82, 196, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #1a3fa0;
+  box-shadow: 0 6px 20px rgba(35, 82, 196, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  box-shadow: 0 4px 15px rgba(1, 184, 8, 0.2);
+}
+
+.btn-secondary:hover {
+  background-color: #019a07;
+  box-shadow: 0 6px 20px rgba(1, 184, 8, 0.3);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  box-shadow: 0 4px 15px rgba(1, 149, 254, 0.2);
+}
+
+.btn-accent:hover {
+  background-color: #0176cc;
+  box-shadow: 0 6px 20px rgba(1, 149, 254, 0.3);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 8px 20px;
+  font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+  padding: 16px 40px;
+  font-size: var(--font-size-lg);
+}
+
+.btn-xl {
+  padding: 20px 50px;
+  font-size: var(--font-size-xl);
+}
+
+/* Button States */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Button Groups */
+.btn-group {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn-group .btn {
+  border-radius: 0;
+  margin-right: -1px;
+}
+
+.btn-group .btn:first-child {
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+}
+
+.btn-group .btn:last-child {
+  border-top-right-radius: 99px;
+  border-bottom-right-radius: 99px;
+  margin-right: 0;
+}
