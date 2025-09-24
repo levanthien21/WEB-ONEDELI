@@ -66,10 +66,10 @@ export const IMAGES = {
   googlePlay: 'https://via.placeholder.com/120x40/000000/FFFFFF?text=Google+Play',
   checkmark: 'https://via.placeholder.com/24x24/00D084/FFFFFF?text=✓',
 
-  // Partners - Local assets (replace with official logos if provided)
-  partnerACB: '/partners/acb.svg',
-  partnerMinvoice: '/partners/minvoice.svg',
-  partnerAhamove: '/partners/ahamove.svg'
+  // Partners - Official assets provided in public/images/logos
+  partnerACB: '/images/logos/logo-acb-3-y-nghia-logo-ngan-hang-tot-nhat-viet-nam-2.webp',
+  partnerMinvoice: '/images/logos/img_logo_minvoice.png',
+  partnerAhamove: '/images/logos/Logo-Ahamove-Transparent.webp'
 };
 
 export const APP_LINKS = {
