@@ -201,6 +201,13 @@
   color: #1d2741;
 }
 
+.modal-subtitle {
+  margin-top: 4px;
+  text-align: center;
+  color: #4a5568;
+  font-size: 14px;
+}
+
 .modal-badge {
   margin: 10px auto 16px;
   width: fit-content;

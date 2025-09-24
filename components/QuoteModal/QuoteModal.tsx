@@ -57,15 +57,16 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
       <div className="modal-panel">
         <button className="modal-close" aria-label="Đóng" onClick={onClose}>×</button>
         <div className="modal-header">
-          <h3>BÁO GIÁ & DÙNG THỬ NGAY!</h3>
-          <div className="modal-badge">Chi 10s – Nhận demo toàn bộ tính năng</div>
+          <h3>🛒 ĐĂNG KÝ DÙNG THỬ ONEDELI</h3>
+          <div className="modal-badge">Trải nghiệm ngay 7 ngày miễn phí</div>
+          <div className="modal-subtitle">Quản lý bán hàng đa kênh – Kho – Hóa đơn</div>
         </div>
 
         <form className="modal-form" onSubmit={handleSubmit}>
           <input
             className="modal-input"
             name="name"
-            placeholder="Họ tên đầy đủ *"
+            placeholder="Họ và tên đầy đủ"
             value={form.name}
             onChange={handleChange}
             required
@@ -73,7 +74,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           <input
             className="modal-input"
             name="phone"
-            placeholder="Số điện thoại *"
+            placeholder="Số điện thoại"
             value={form.phone}
             onChange={handleChange}
             required
@@ -97,7 +98,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           {error && <div className="modal-error">{error}</div>}
 
           <button className="btn btn-primary modal-submit" type="submit" disabled={submitting}>
-            {submitting ? 'Đang gửi...' : 'Nhận báo giá & Demo miễn phí'}
+            {submitting ? 'Đang gửi...' : 'Dùng thử ngay & nhận báo giá'}
           </button>
         </form>
       </div>
