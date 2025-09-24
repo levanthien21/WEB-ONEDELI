@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="hero-content">
         <div className="container">
-          <div className="hero-text fade-in-up">
+          <div className="hero-text hero-panel fade-in-up">
             <h1 className="hero-title">Onedeli – Giải pháp bán hàng đồng hành cùng hộ kinh doanh</h1>
             <p className="hero-intro">Onedeli được phát triển nhằm hỗ trợ hộ kinh doanh quản lý hoạt động bán hàng một cách dễ dàng, nhanh chóng và hoàn toàn miễn phí.</p>
             <ul className="hero-benefits">
