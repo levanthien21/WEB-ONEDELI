@@ -60,6 +60,11 @@
   padding: 0 var(--spacing-sm);
 }
 
+.hero-text {
+  max-width: 760px;
+  text-align: left;
+}
+
 .hero-eyebrow {
   color: #b6c9ff;
   font-weight: 600;
@@ -94,7 +99,7 @@
 .hero-benefits li {
   position: relative;
   padding-left: 26px;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .hero-benefits li::before {
@@ -126,8 +131,8 @@
   gap: 10px;
   padding: 16px 28px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #00c27a, #00e09f);
-  color: #082340;
+  background: linear-gradient(135deg, #00bd7a, #00d69a);
+  color: #0b233f;
   font-weight: 800;
   box-shadow: 0 10px 30px rgba(0, 224, 159, 0.25);
 }
@@ -173,6 +178,14 @@
 @media (min-width: 1200px) {
   .hero { height: 72vh; }
   .hero-title { font-size: 2.4rem; max-width: 1200px; }
+}
+
+@media (min-width: 992px) {
+  .hero-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+  }
 }
 
 @media (max-width: 480px) {
