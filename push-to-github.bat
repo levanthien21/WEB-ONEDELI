@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo    ONE DELI LANDING PAGE - GIT SETUP
+echo    WEB-ONEDELI - GIT PUSH
 echo ========================================
 echo.
 
@@ -9,17 +9,17 @@ git status
 echo.
 
 echo [2/3] Pushing to GitHub...
-echo Repository: https://github.com/levanthien21/onedeli-landing-page.git
+echo Repository: https://github.com/levanthien21/web-onedeli.git
 echo.
 git push -u origin main
 
 echo.
-echo [3/3] Git setup completed!
+echo [3/3] Git push completed!
 echo.
-echo Repository URL: https://github.com/levanthien21/onedeli-landing-page
+echo Repository URL: https://github.com/levanthien21/web-onedeli
 echo.
 echo Commands used:
-echo - git remote add origin https://github.com/levanthien21/onedeli-landing-page.git
+echo - git remote add origin https://github.com/levanthien21/web-onedeli.git
 echo - git push -u origin main
 echo.
 pause
