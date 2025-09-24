@@ -6,6 +6,7 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   images: {
+    unoptimized: true,
     domains: ['localhost', 'via.placeholder.com'],
     remotePatterns: [
       {
