@@ -20,9 +20,11 @@ const Hero: React.FC = () => {
           <div className="hero-text fade-in-up">
             <h1>One Deli</h1>
             <p className="hero-subtitle">
-              Giải pháp bán hàng chuyên nghiệp đến từ thương hiệu 
+              Onedeli được tạo ra để đồng hành cùng hộ kinh doanh, giúp việc bán hàng trở nên dễ dàng và hoàn toàn miễn phí.
               <br />
-              Công ty Cổ phần Giải pháp Công nghệ Sen Vàng
+              Không cần am hiểu công nghệ, bạn vẫn có thể xuất hóa đơn điện tử, quản lý đơn hàng và theo dõi doanh thu chỉ với một ứng dụng đơn giản.
+              <br />
+              Onedeli giúp bạn tiết kiệm thời gian, chi phí và tập trung vào điều quan trọng nhất – phát triển việc kinh doanh.
             </p>
             <div className="hero-cta">
               <a href="#contact" className="btn btn-primary btn-large">
