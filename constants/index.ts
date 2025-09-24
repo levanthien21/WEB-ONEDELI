@@ -67,7 +67,7 @@ export const IMAGES = {
   checkmark: 'https://via.placeholder.com/24x24/00D084/FFFFFF?text=✓',
 
   // Partners - Official assets provided in public/images/logos
-  partnerACB: '/images/logos/logo-acb-3-y-nghia-logo-ngan-hang-tot-nhat-viet-nam-2.webp',
+  partnerACB: '/images/logos/Logo-ACB.webp',
   partnerMinvoice: '/images/logos/img_logo_minvoice.png',
   partnerAhamove: '/images/logos/Logo-Ahamove-Transparent.webp'
 };
