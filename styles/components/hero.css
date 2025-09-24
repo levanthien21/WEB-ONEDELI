@@ -1,6 +1,6 @@
 .hero-intro {
   color: #475569;
-  font-size: 1rem;
+  font-size: 0.98rem;
   margin-bottom: 10px;
   text-align: left;
   max-width: 900px;
@@ -58,12 +58,10 @@
 }
 
 .hero-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: saturate(160%) blur(4px);
-  border: 1px solid rgba(2, 132, 199, 0.08);
-  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.08);
-  border-radius: 16px;
-  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 .hero-eyebrow {
@@ -74,7 +72,7 @@
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 1.95rem;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 0.75rem;
@@ -131,12 +129,12 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 28px;
+  padding: 16px 26px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #03c04a, #09d35c);
-  color: #062b1a;
+  background: var(--secondary-color);
+  color: #ffffff;
   font-weight: 800;
-  box-shadow: 0 10px 30px rgba(0, 224, 159, 0.25);
+  box-shadow: 0 8px 20px rgba(1, 184, 8, 0.25);
 }
 
 .btn-cta:hover {
