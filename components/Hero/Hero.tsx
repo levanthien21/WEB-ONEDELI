@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           <div className="hero-text fade-in-up">
             <div className="hero-eyebrow">Nền tảng</div>
             <h1 className="hero-title">Quản lý bán hàng hợp kênh<br/>đơn giản cho mọi hộ kinh doanh</h1>
-            <p className="hero-subtitle">Onedeli được thiết kế để đồng hành cùng hộ kinh doanh, giúp vận hành bán hàng trở nên đơn giản và hoàn toàn miễn phí.</p>
+            <p className="hero-subtitle">Quản lý bán hàng hợp kênh đơn giản cho mọi hộ kinh doanh.</p>
             <p className="hero-subtitle">Không cần am hiểu công nghệ, bạn vẫn có thể xuất hóa đơn điện tử, quản lý đơn hàng và theo dõi doanh thu chỉ với một ứng dụng duy nhất.</p>
             <p className="hero-subtitle">Onedeli giúp tiết kiệm thời gian, tối ưu chi phí và tập trung vào điều quan trọng nhất – phát triển việc kinh doanh.</p>
             <div className="hero-cta">
