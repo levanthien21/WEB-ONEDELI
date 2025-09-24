@@ -9,6 +9,7 @@ const Features: React.FC = () => {
       <div className="container">
         <div className="features-header text-center">
           <h2>Hệ sinh thái đối tác uy tín</h2>
+          <p className="features-subtitle">OneDeli hợp tác cùng các thương hiệu, ngân hàng và giải pháp hàng đầu nhằm mang đến trải nghiệm quản trị bán hàng hiện đại, an toàn và hiệu quả cho doanh nghiệp.</p>
         </div>
         
         <div className="features-content">

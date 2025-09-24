@@ -39,6 +39,14 @@
   line-height: 1.2;
 }
 
+.features-subtitle {
+  margin: 12px auto 0;
+  max-width: 860px;
+  color: #4a5568;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .features-content {
   text-align: center;
 }
