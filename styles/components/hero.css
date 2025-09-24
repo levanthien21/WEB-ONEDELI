@@ -131,8 +131,8 @@
   gap: 10px;
   padding: 16px 28px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #00bd7a, #00d69a);
-  color: #0b233f;
+  background: linear-gradient(135deg, #03c04a, #09d35c);
+  color: #062b1a;
   font-weight: 800;
   box-shadow: 0 10px 30px rgba(0, 224, 159, 0.25);
 }
@@ -141,9 +141,7 @@
   transform: translateY(-2px);
 }
 
-.btn-cta-arrow {
-  font-size: 20px;
-}
+/* removed arrow icon */
 
 /* Animations */
 .fade-in-up {

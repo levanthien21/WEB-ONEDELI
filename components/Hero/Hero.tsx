@@ -30,7 +30,6 @@ const Hero: React.FC = () => {
             <div className="hero-cta">
               <a href="#contact" className="btn btn-cta">
                 Dùng thử miễn phí
-                <span className="btn-cta-arrow">→</span>
               </a>
             </div>
           </div>
