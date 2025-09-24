@@ -61,6 +61,35 @@
   max-width: 780px;
 }
 
+.hero-kicker {
+  color: #d9e4ff;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hero-benefits {
+  margin: 10px 0 20px;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  color: #eaf0ff;
+}
+
+.hero-benefits li {
+  position: relative;
+  padding-left: 26px;
+  margin: 8px 0;
+}
+
+.hero-benefits li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00e09f;
+}
+
 .hero-subtitle {
   font-size: 1rem;
   font-weight: 400;
