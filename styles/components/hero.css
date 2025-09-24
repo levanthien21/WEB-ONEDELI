@@ -62,7 +62,7 @@
   z-index: 2;
   color: var(--text-dark);
   width: 100%;
-  padding: 0 var(--spacing-sm);
+  padding: 38vh var(--spacing-sm) 0; /* push content down to make room for image */
 }
 
 .hero-text {
@@ -184,6 +184,7 @@
     margin-bottom: 1rem;
   }
   .btn-cta { padding: 14px 22px; }
+  .hero-content { padding-top: 24vh; }
 }
 
 @media (min-width: 1200px) {
