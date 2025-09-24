@@ -64,7 +64,12 @@ export const IMAGES = {
   // Icons - Using placeholders
   appStore: 'https://via.placeholder.com/120x40/000000/FFFFFF?text=App+Store',
   googlePlay: 'https://via.placeholder.com/120x40/000000/FFFFFF?text=Google+Play',
-  checkmark: 'https://via.placeholder.com/24x24/00D084/FFFFFF?text=✓'
+  checkmark: 'https://via.placeholder.com/24x24/00D084/FFFFFF?text=✓',
+
+  // Partners - Using placeholders
+  partnerACB: 'https://via.placeholder.com/200x80/0047AB/FFFFFF?text=ACB',
+  partnerMinvoice: 'https://via.placeholder.com/200x80/FF6F00/FFFFFF?text=M-invoice',
+  partnerAhamove: 'https://via.placeholder.com/200x80/FF3B30/FFFFFF?text=Ahamove'
 };
 
 export const APP_LINKS = {

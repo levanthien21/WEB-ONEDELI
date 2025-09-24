@@ -12,27 +12,37 @@ const Features: React.FC = () => {
         </div>
         
         <div className="features-content">
-          <div className="feature-images">
-            <div className="feature-image">
-              <Image 
-                src={IMAGES.feature1} 
-                alt="Tính năng 1" 
-                width={300}
-                height={200}
-                className="img-responsive img-border-radius"
+          {/* Partner Logos */}
+          <div className="partners-grid">
+            <div className="partner-item" aria-label="ACB">
+              <Image
+                src={IMAGES.partnerACB}
+                alt="ACB"
+                width={200}
+                height={80}
+                className="img-responsive"
               />
             </div>
-            <div className="feature-image">
-              <Image 
-                src={IMAGES.feature2} 
-                alt="Tính năng 2" 
-                width={300}
-                height={200}
-                className="img-responsive img-border-radius"
+            <div className="partner-item" aria-label="M-invoice">
+              <Image
+                src={IMAGES.partnerMinvoice}
+                alt="M-invoice"
+                width={200}
+                height={80}
+                className="img-responsive"
+              />
+            </div>
+            <div className="partner-item" aria-label="Ahamove">
+              <Image
+                src={IMAGES.partnerAhamove}
+                alt="Ahamove"
+                width={200}
+                height={80}
+                className="img-responsive"
               />
             </div>
           </div>
-          
+
           <div className="features-cta text-center">
             <a href="#contact" className="btn btn-primary btn-large">
               Tải app ngay
