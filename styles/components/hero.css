@@ -25,10 +25,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Subtle brand-aligned light background for readability */
-  background:
-    radial-gradient(800px 420px at 85% 40%, rgba(1, 149, 254, 0.08) 0%, rgba(1, 149, 254, 0) 60%),
-    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  /* Clean white background for better readability */
+  background: #ffffff;
 }
 
 /* Hero Background */
@@ -52,7 +50,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.25) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
   pointer-events: none;
 }
 
@@ -91,10 +89,11 @@
   margin-bottom: 0.75rem;
   text-align: left;
   max-width: 1100px; /* widen to avoid excessive wrapping */
+  color: #1e293b; /* Darker color for better contrast */
 }
 
 .hero-kicker {
-  color: #475569;
+  color: #334155; /* Darker color for better contrast */
   font-size: 1.05rem;
   margin-bottom: 10px;
   text-align: left;
@@ -105,7 +104,7 @@
   padding-left: 0;
   list-style: none;
   text-align: left;
-  color: #334155;
+  color: #1e293b; /* Darker color for better contrast */
 }
 
 .hero-benefits li {
