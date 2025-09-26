@@ -49,7 +49,7 @@ export const IMAGES = {
   logoWhite: '/images/logos/logo-onedeli-white.png',
   
   // Hero - Local marketing background
-  heroBackground: '/images/marketing/528556755_122119240454931574_3635096197601020149_n.jpg',
+  heroBackground: '/images/marketing/1.jpg',
   
   // Sections - Using placeholders
   aboutImage: 'https://via.placeholder.com/500x400/7ED321/FFFFFF?text=About+One+Deli',

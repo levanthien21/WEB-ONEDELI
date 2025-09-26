@@ -1,17 +1,19 @@
 .hero-intro {
-  color: #475569;
+  color: #4b5563 !important; /* Professional medium gray */
   font-size: 0.98rem;
   margin-bottom: 10px;
   text-align: left;
   max-width: 900px;
+  font-weight: 500; /* Slightly bolder */
 }
 
 .hero-closing {
-  color: #334155;
+  color: #4b5563 !important; /* Professional medium gray */
   font-size: 1rem;
   margin-top: 6px;
   text-align: left;
   max-width: 920px;
+  font-weight: 500; /* Slightly bolder */
 }
 /* ==========================================================================
    HERO COMPONENT
@@ -25,8 +27,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Clean white background for better readability */
-  background: #ffffff;
+  /* Professional gradient background */
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
 }
 
 /* Hero Background */
@@ -50,7 +52,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.6) 100%);
+  background: linear-gradient(90deg, rgba(248,250,252,0.9) 0%, rgba(226,232,240,0.7) 50%, rgba(203,213,225,0.5) 100%);
   pointer-events: none;
 }
 
@@ -58,7 +60,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  color: var(--text-dark);
+  color: #374151; /* Professional dark gray */
   width: 100%;
   padding: 38vh var(--spacing-sm) 0; /* push content down to make room for image */
 }
@@ -66,6 +68,7 @@
 .hero-text {
   max-width: 760px;
   text-align: left;
+  color: #374151 !important; /* Professional dark gray */
 }
 
 .hero-panel {
@@ -89,14 +92,16 @@
   margin-bottom: 0.75rem;
   text-align: left;
   max-width: 1100px; /* widen to avoid excessive wrapping */
-  color: #1e293b; /* Darker color for better contrast */
+  color: #1e40af !important; /* Professional blue color */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
 }
 
 .hero-kicker {
-  color: #334155; /* Darker color for better contrast */
+  color: #334155 !important; /* Professional dark gray */
   font-size: 1.05rem;
   margin-bottom: 10px;
   text-align: left;
+  font-weight: 500; /* Slightly bolder */
 }
 
 .hero-benefits {
@@ -104,7 +109,8 @@
   padding-left: 0;
   list-style: none;
   text-align: left;
-  color: #1e293b; /* Darker color for better contrast */
+  color: #374151 !important; /* Professional dark gray */
+  font-weight: 500; /* Slightly bolder */
 }
 
 .hero-benefits li {
@@ -114,22 +120,24 @@
 }
 
 .hero-benefits li::before {
-  content: '✔';
+  content: '✓';
   position: absolute;
   left: 0;
   top: 0;
-  color: #10b981;
+  color: #059669; /* Professional green */
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .hero-subtitle {
   font-size: 0.98rem;
-  font-weight: 400;
+  font-weight: 500; /* Slightly bolder */
   margin-bottom: 1rem;
   line-height: 1.6;
   opacity: 0.95;
   text-align: left;
   max-width: 900px;
-  color: #475569;
+  color: #4b5563 !important; /* Professional medium gray */
 }
 
 /* Hero CTA */
