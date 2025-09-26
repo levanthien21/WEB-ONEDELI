@@ -48,8 +48,8 @@ export const IMAGES = {
   logo: '/images/logos/logo-onedeli-3.png',
   logoWhite: '/images/logos/logo-onedeli-white.png',
   
-  // Hero - Local marketing background
-  heroBackground: '/images/marketing/1.jpg',
+        // Hero - Local marketing background
+        heroBackground: '/images/hero/2.jpg',
   
   // Sections - Using placeholders
   aboutImage: 'https://via.placeholder.com/500x400/7ED321/FFFFFF?text=About+One+Deli',
@@ -73,8 +73,19 @@ export const IMAGES = {
 };
 
 export const MARKETING_IMAGES = {
-  trialHero: '/images/marketing/trial-hero.jpg'
+  trialHero: '/images/marketing/Giải pháp bán hàng đơn giản (6).png',
+  pricingFull: '/images/marketing/Bảng giá đầy đủ (4).png',
+  pricingFull1: '/images/marketing/Bảng giá đầy đủ (1).png',
+  pricingFull2: '/images/marketing/Bảng giá đầy đủ (2).png',
+  pricingFull3: '/images/marketing/Bảng giá đầy đủ (3).png'
 };
+
+export const PRICING_IMAGES: string[] = [
+  MARKETING_IMAGES.pricingFull,
+  MARKETING_IMAGES.pricingFull1,
+  MARKETING_IMAGES.pricingFull2,
+  MARKETING_IMAGES.pricingFull3,
+];
 
 export const APP_LINKS = {
   appStore: IMAGES.appStore,

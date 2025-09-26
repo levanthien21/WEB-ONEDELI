@@ -72,7 +72,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           <div>
             <div className="modal-header">
               <h3>🛒 ĐĂNG KÝ DÙNG THỬ ONEDELI</h3>
-              <div className="modal-badge">Trải nghiệm ngay 7 ngày miễn phí</div>
+              <div className="modal-badge">Khởi đầu dễ dàng với chi phí 0đ</div>
               <div className="modal-subtitle">Quản lý bán hàng đa kênh – Kho – Hóa đơn</div>
             </div>
 
