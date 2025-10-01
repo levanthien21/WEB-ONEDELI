@@ -62,6 +62,11 @@
 @import './components/contact.css';
 
 /* ==========================================================================
+   10. GUIDE COMPONENT
+   ========================================================================== */
+@import './components/guide.css';
+
+/* ==========================================================================
    10. FOOTER COMPONENT
    ========================================================================== */
 @import './components/footer.css';
@@ -95,10 +100,12 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.6;
-  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1f2937;
   background-color: #ffffff;
 }
 
@@ -108,23 +115,37 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 h1 {
   font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 1.8rem;
+  line-height: 1.3;
 }
 
 p {
   margin-bottom: 1rem;
   font-weight: 400;
+  color: #374151;
+}
+
+/* Utility - lead paragraph */
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #374151;
 }
 
 /* Button Styles */
@@ -333,7 +354,7 @@ html {
 }
 
 /* About.css */
-.about {   background-color: var(--accent-color);   padding: 80px 0; }  .about-content {   text-align: center; }  .about-image {   max-width: 90%;   margin: 0 auto; }  .about-image img {   width: 100%;   height: auto;   box-shadow: var(--shadow); }  /* Responsive */ @media (max-width: 768px) {   .about {     padding: 60px 0;   }      .about-image {     max-width: 100%;   } }
+.about {   background-color: #ffffff;   padding: 80px 0; }  .about-content {   text-align: center; }  .about-image {   max-width: 90%;   margin: 0 auto; }  .about-image img {   width: 100%;   height: auto;   box-shadow: var(--shadow); }  /* Responsive */ @media (max-width: 768px) {   .about {     padding: 60px 0;   }      .about-image {     max-width: 100%;   } }
 
 /* Contact.css */
 .contact {   background: linear-gradient(135deg, rgba(1, 149, 254, 0.65), rgba(35, 82, 196, 0.8));   padding: 80px 0;   min-height: 100vh;   display: flex;   align-items: center; }  .contact-info {   padding: 30px 0;   flex: 1;   display: flex;   flex-direction: column;   justify-content: center; }  .contact-info h2 {   font-size: 2.5rem;   color: white;   margin-bottom: 1.2rem;   line-height: 1.2;   font-weight: 700; }  .contact-info p {   color: rgba(255, 255, 255, 0.9);   margin-bottom: 0.8rem;   font-size: 1.1rem;   line-height: 1.5; }  .features-list {   list-style: none;   padding: 0;   margin: 2rem 0; }  .features-list li {   color: rgba(255, 255, 255, 0.9);   margin-bottom: 0.6rem;   font-size: 1.1rem;   line-height: 1.4; }  .contact-info h3 {   color: white;   margin-top: 1.5rem;   margin-bottom: 1rem;   font-size: 1.3rem;   font-weight: 700; }  .download-buttons {   display: flex;   gap: 20px;   margin-top: 1rem; }  .download-btn {   flex: 1;   max-width: 200px; }  .download-icon {   width: 100%;   height: auto;   cursor: pointer;   transition: transform 0.3s ease; }  .download-icon:hover {   transform: scale(1.05); }  .contact-form-container {   background-color: var(--dark-bg);   padding: 60px;   border-radius: var(--border-radius);   box-shadow: var(--shadow);   position: relative;   z-index: 10;   min-height: 600px;   max-height: 800px;   display: flex;   flex-direction: column;   justify-content: center;   overflow: hidden; }  .form-title {   text-align: center;   font-size: 1.6rem;   color: white;   margin-bottom: 1.5rem;   font-weight: 700; }  .contact-form {   display: flex;   flex-direction: column;   gap: 1.5rem;   width: 100%;   max-width: 100%; }  .form-group {   display: flex;   flex-direction: column;   margin-bottom: 1.5rem;   flex-shrink: 0; }  .form-group label {   color: white;   margin-bottom: 0.4rem;   font-weight: 600;   font-size: 1rem; }  .form-input {   padding: 15px;   border: 2px solid rgba(255, 255, 255, 0.2);   border-radius: 8px;   background-color: rgba(255, 255, 255, 0.1);   color: white;   font-size: 16px;   transition: all 0.3s ease;   width: 100%;   box-sizing: border-box;   min-height: 56px; }  .form-textarea {   padding: 15px;   border: 2px solid rgba(255, 255, 255, 0.2);   border-radius: 8px;   background-color: rgba(255, 255, 255, 0.1);   color: white;   font-size: 16px;   transition: all 0.3s ease;   width: 100%;   box-sizing: border-box;   resize: vertical;   min-height: 120px;   max-height: 200px; }  .form-input:focus, .form-textarea:focus {   outline: none;   border-color: var(--secondary-color);   background-color: rgba(255, 255, 255, 0.15); }  .form-input.error, .form-textarea.error {   border-color: #dc3545;   background-color: rgba(220, 53, 69, 0.1); }  .error-message {   color: #dc3545;   font-size: 12px;   margin-top: 5px;   display: block; }  .form-input::placeholder, .form-textarea::placeholder {   color: rgba(255, 255, 255, 0.6); }  .form-submit {   margin-top: 1rem;   width: 100%;   background-color: var(--primary-color);   color: white;   border: none;   padding: 18px;   font-size: 1.1rem;   font-weight: 700;   border-radius: 99px;   cursor: pointer;   transition: all 0.3s ease;   min-height: 56px;   display: flex;   align-items: center;   justify-content: center; }  .form-submit:hover {   background-color: #1a3fa0;   transform: translateY(-2px);   box-shadow: 0 8px 30px rgba(35, 82, 196, 0.4); }  /* Responsive */ @media (max-width: 768px) {   .contact {     padding: 60px 0;     min-height: auto;     display: block;   }      .contact-info h2 {     font-size: 2rem;   }      .contact-info p,   .features-list li {     font-size: 1rem;   }      .contact-form-container {     padding: 40px 30px;     margin-top: 30px;     min-height: 500px;   }      .form-title {     font-size: 1.3rem;   }      .download-buttons {     flex-direction: column;     gap: 15px;   }      .download-btn {     max-width: 100%;   } }  @media (max-width: 480px) {   .contact-info h2 {     font-size: 1.5rem;   }      .contact-form-container {     padding: 30px 20px;   }      .form-input,   .form-textarea {     padding: 12px;     font-size: 14px;   }      .form-submit {     padding: 15px;     font-size: 1rem;   } }

@@ -12,35 +12,30 @@ export const COMPANY_INFO = {
 };
 
 export const NAVIGATION_ITEMS = [
-  { id: 'home', label: 'Trang Chủ', href: '#home' },
-  { id: 'about', label: 'Về One Deli', href: '#about' },
-  { id: 'programs', label: 'Chương Trình Ưu Đãi', href: '#programs' },
-  { id: 'guide', label: 'Hướng Dẫn Sử Dụng', href: '#guide' },
-  { id: 'intro', label: 'Giới Thiệu', href: '#intro' },
-  { id: 'features', label: 'Tính Năng', href: '#features' }
+  { id: 'home', label: 'Trang chủ', href: '#home' },
+  { id: 'about', label: 'Về Onedeli', href: '#about' },
+  { id: 'features', label: 'Tính năng', href: '#features' },
+  { id: 'intro', label: 'Giải pháp', href: '#intro' },
+  { id: 'pricing', label: 'Bảng giá', href: '#pricing' },
+  { id: 'contact', label: 'Hỗ trợ', href: '#contact' },
+  { id: 'programs', label: 'Tính năng mới', href: '#programs' },
 ];
 
 export const FEATURES = [
-  {
-    id: 'simple-ui',
-    title: 'Giao diện đơn giản',
-    description: 'Ai cũng dễ dàng sử dụng'
-  },
-  {
-    id: 'secure-system',
-    title: 'Hệ thống bảo mật cao',
-    description: 'An toàn cho dữ liệu kinh doanh'
-  },
-  {
-    id: 'all-in-one',
-    title: 'Quản lý toàn diện',
-    description: 'Đơn hàng, tồn kho, doanh thu trong một ứng dụng'
-  },
-  {
-    id: 'support-team',
-    title: 'Hỗ trợ tận tâm',
-    description: 'Đội ngũ hỗ trợ người dùng nhanh chóng, tận tâm'
-  }
+  { id: 'einvoice', icon: '📄', title: 'Hóa đơn điện tử', description: 'Xuất hóa đơn hợp lệ, đúng quy định, nhanh chóng, miễn phí tới 2000 hóa đơn.' },
+  { id: 'inventory', icon: '📦', title: 'Quản lý kho', description: 'Kiểm soát nhập – xuất – tồn, cảnh báo tồn kho thấp, giảm thất thoát.' },
+  { id: 'revenue', icon: '💰', title: 'Báo cáo doanh thu', description: 'Tự động thống kê thu – chi, lợi nhuận theo ngày, tuần, tháng.' },
+  { id: 'orders', icon: '🛒', title: 'Quản lý đơn hàng', description: 'Ghi nhận và xử lý đơn bán tại quầy hoặc online dễ dàng.' },
+  { id: 'loyalty', icon: '👥', title: 'Khách hàng thân thiết', description: 'Tạo hồ sơ khách hàng, và chăm sóc để tăng khách quay lại.' },
+  { id: 'mobile', icon: '📱', title: 'Bán hàng trên điện thoại', description: 'Gọn nhẹ, dễ dùng, chỉ cần smartphone là quản lý được toàn bộ cửa hàng.' },
+  { id: 'reminder', icon: '🔔', title: 'Nhắc nhở thông minh', description: 'Tự động nhắc công nợ, tồn kho, doanh thu hằng ngày.' },
+  { id: 'devices', icon: '🔗', title: 'Kết nối thiết bị', description: 'Tương thích máy in hóa đơn, máy quét mã vạch, hỗ trợ bán hàng nhanh.' },
+  { id: 'payments', icon: '💳', title: 'Thanh toán đa kênh', description: 'Hỗ trợ chuyển khoản, quét QR, tiền mặt… tiện lợi cho khách hàng.' },
+  { id: 'analytics', icon: '📈', title: 'Phân tích kinh doanh', description: 'Biểu đồ trực quan giúp bạn nhìn rõ tình hình và xu hướng kinh doanh.' },
+  { id: 'staff', icon: '👨‍👩‍👧‍👦', title: 'Quản lý nhân viên', description: 'Phân quyền, theo dõi ca làm và hiệu suất của từng nhân viên.' },
+  { id: 'promo', icon: '🏷️', title: 'Khuyến mãi & combo', description: 'Tạo chương trình giảm giá, combo sản phẩm dễ dàng để thu hút khách.' },
+  { id: 'debt', icon: '💸', title: 'Quản lý công nợ', description: 'Theo dõi nợ phải thu, nợ phải trả, nhắc nhở tự động.' },
+  { id: 'omnichannel', icon: '🌐', title: 'Bán hàng đa kênh', description: 'Kết nối bán trực tiếp và online, quản lý chung trên một ứng dụng.' },
 ];
 
 export const IMAGES = {

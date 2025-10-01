@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
-import Programs from '@/components/Programs/Programs';
 import Features from '@/components/Features/Features';
 import Pricing from '@/components/Pricing/Pricing';
 import Contact from '@/components/Contact/Contact';
@@ -25,7 +24,6 @@ const Home: React.FC = () => {
       <main className="main-content">
         <Hero />
         <About />
-        <Programs />
         <Features />
         <Pricing />
         <Contact />

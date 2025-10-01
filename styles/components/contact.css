@@ -1,82 +1,365 @@
 /* ==========================================================================
-   CONTACT COMPONENT
+   CONTACT COMPONENT - EXACTLY LIKE PRICING
    ========================================================================== */
 
 .contact {
-  background: linear-gradient(135deg, rgba(1, 149, 254, 0.65), rgba(35, 82, 196, 0.8));
   padding: var(--spacing-xxl) 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
-/* Contact Info */
-.contact-info {
-  padding: 30px 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.contact-header {
+  margin-bottom: 60px;
 }
 
-.contact-info h2 {
+.contact-header h2 {
   font-size: 2.5rem;
-  color: var(--text-light);
-  margin-bottom: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 700;
   line-height: 1.2;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+/* Contact Cards - Like Pricing Images */
+.contact-info-card,
+.contact-features-card,
+.contact-download-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition-base);
+  margin-bottom: 24px;
+}
+
+.contact-info-card:hover,
+.contact-features-card:hover,
+.contact-download-card:hover {
+  transform: scale(1.02);
+}
+
+/* Contact Info Content */
+.contact-info-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info-content h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
   font-weight: 700;
-}
-
-.contact-info p {
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-.contact-info h3 {
-  color: var(--text-light);
-  margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-/* Features List */
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-}
-
-.features-list li {
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0.6rem;
-  font-size: 1.1rem;
   line-height: 1.4;
 }
 
-/* Download Buttons */
-.download-buttons {
+.contact-info-content p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-content p strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Contact Features Grid */
+.contact-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-feature-item {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
   display: flex;
-  gap: var(--spacing-sm);
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.contact-feature-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.contact-feature-content p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Download Section */
+.download-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.download-content {
+  text-align: left;
+}
+
+.download-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Download Header */
+.download-header {
+  margin-bottom: 40px;
+}
+
+.download-title {
+  color: #2352c4;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.download-subtitle {
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.download-description {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Download Features - Hidden for this design */
+.download-features {
+  display: none;
+}
+
+/* Download Actions */
+.download-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .download-btn {
-  flex: 1;
-  max-width: 200px;
-}
-
-.download-icon {
-  width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  color: white;
   cursor: pointer;
-  transition: var(--transition-base);
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
 }
 
-.download-icon:hover {
-  transform: scale(1.05);
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.download-btn:hover::before {
+  left: 100%;
+}
+
+.download-btn-primary {
+  background: linear-gradient(135deg, #2352c4 0%, #0195fe 100%);
+  box-shadow: 0 8px 25px rgba(35, 82, 196, 0.3);
+}
+
+.download-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(35, 82, 196, 0.4);
+}
+
+.download-btn-secondary {
+  background: linear-gradient(135deg, #ff6b35 0%, #ffa726 100%);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+}
+
+.download-btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
+}
+
+.btn-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-subtitle {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Download Stats - Hidden for this design */
+.download-stats {
+  display: none;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #667eea;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #718096;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .download-section {
+    padding: 60px 0;
+  }
+  
+  .download-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .download-content {
+    text-align: center;
+  }
+  
+  .download-title {
+    font-size: 2.5rem;
+  }
+  
+  .download-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .download-description {
+    font-size: 1rem;
+  }
+  
+  .download-actions {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-btn {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-section {
+    padding: 40px 0;
+  }
+  
+  .download-container {
+    padding: 0 16px;
+  }
+  
+  .download-title {
+    font-size: 2rem;
+  }
+  
+  .download-subtitle {
+    font-size: 1rem;
+  }
+  
+  .download-description {
+    font-size: 0.9rem;
+  }
+  
+  .download-btn {
+    min-width: 100%;
+    padding: 14px 20px;
+  }
+  
+  .btn-title {
+    font-size: 14px;
+  }
+  
+  .btn-subtitle {
+    font-size: 11px;
+  }
 }
 
 /* Contact Form */
@@ -163,42 +446,68 @@
 @media (max-width: 768px) {
   .contact {
     padding: 60px 0;
-    min-height: auto;
   }
   
-  .contact-info h2 {
+  .contact-header h2 {
     font-size: 2rem;
   }
   
-  .contact-form-container {
-    padding: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+  .contact-info-card,
+  .contact-features-card,
+  .contact-download-card {
+    padding: 20px;
   }
   
-  .form-title {
+  .contact-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .contact-download-content h3 {
     font-size: 1.5rem;
   }
   
-  .download-buttons {
+  .contact-download-buttons {
     flex-direction: column;
-    gap: var(--spacing-sm);
-  }
-  
-  .download-btn {
-    max-width: none;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-info h2 {
+  .contact-header h2 {
     font-size: 1.8rem;
   }
   
-  .contact-info p {
+  .contact-info-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .contact-info-content p {
     font-size: 1rem;
   }
   
-  .features-list li {
+  .contact-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-feature-item {
+    padding: 16px 12px;
+  }
+  
+  .contact-feature-content h4 {
+    font-size: 0.9rem;
+  }
+  
+  .contact-feature-content p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-download-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .contact-download-content p {
     font-size: 1rem;
   }
 }

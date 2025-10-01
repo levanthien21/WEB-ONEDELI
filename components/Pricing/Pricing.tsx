@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import { IMAGES, MARKETING_IMAGES, PRICING_IMAGES } from '@/constants';
+import { PRICING_IMAGES } from '@/constants';
 
 
 const Pricing: React.FC = () => {
   return (
-    <section id="intro" className="pricing section">
+    <section id="pricing" className="pricing section">
       <div className="container">
         <div className="pricing-header text-center">
           <h2>Bảng Giá Của Onedeli</h2>

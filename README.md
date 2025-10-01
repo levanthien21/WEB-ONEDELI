@@ -107,7 +107,7 @@ npm run lint
 4. **Programs** - Chương trình ưu đãi
 5. **Features** - Tính năng nổi bật
 6. **Pricing** - Bảng giá
-7. **Contact** - Form đăng ký tư vấn
+7. **Contact** - Form báo giá và dùng thử
 8. **Footer** - Thông tin công ty
 
 ## 🚀 Deployment
